@@ -1,4 +1,35 @@
-# JoyzAiFeTask
+# JoyzAI FE Dev Angular Tree Assignment
+
+## Candidate Details
+- **Name:** Mohammed
+- **UPI ID:** mohammadhirani13-2@oksbi
+
+---
+
+## Project Overview
+This project is a simple Angular application that displays a **hierarchical tree structure**. The tree is rendered using a **recursive `TreeViewComponent`**, which takes a tree-like object (key → children array) and displays it as nested `<ul>/<li>` elements.
+
+---
+
+## Features
+- Modular structure: Tree data stored separately in `tree-data.ts`.
+- Recursive rendering of tree nodes using Angular components.
+- Dynamic root detection: Automatically identifies the top-level root node.
+- Minimal HTML/CSS to match assignment requirements exactly.
+- Fully functional Angular app, runs without errors.
+
+---
+
+## Tree Data Example used in the project:
+```ts
+export const TREE_DATA = {
+  "a": ["b", "c"],
+  "b": ["d", "e"],
+  "c": ["f", "g"],
+  "e": ["h", "i"],
+  "f": ["j", "k"]
+};
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.4.
 
