@@ -1,0 +1,14 @@
+<section>
+  <ul *ngIf="root">
+    <li>
+      {{!isRoot() ? "-" : ""}} {{ root }}
+
+      <ul *ngIf="data[root]?.length">
+        <li *ngFor="let child of data[root]">
+          <app-tree-view [data]="data" [root]="child"></app-tree-view>
+        </li>
+      </ul>
+
+    </li>
+  </ul>
+</section>
